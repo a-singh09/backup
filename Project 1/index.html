@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Fitness Centre</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<style>
+    body {
+        color: azure;
+        padding: 0px;
+        margin: 0px;
+        background: url('abs-gf6b90e5f0_1920.jpg');
+        background-size: 1400px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        /* border: 2px solid aqua; */
+    }
+
+    .left img {
+        width: auto;
+        filter: invert(100%);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .mid {
+        display: block;
+        margin: 30px auto;
+        width: 35%;
+        /* border: 2px solid rgb(51, 255, 0); */
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        padding: 0px 15px;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: rgb(255, 168, 28);
+        text-decoration: none;
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid rgb(231, 129, 233); */
+    }
+
+    .btn {
+        margin: 0px 5px;
+        color: rgb(255, 168, 28);
+        background-color: rgb(110, 48, 4);
+        border: 2px solid brown;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid rgb(255, 255, 255);
+        margin: 120px 52px;
+        padding: 36px 7px;
+        border-radius: 20px;
+        width: 33%;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        padding: 1px;
+        display: block;
+        border: 2px solid white;
+        margin: 20px auto;
+        width: 255px;
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: black;
+        color: rgb(255, 168, 28);
+    }
+
+    .container button {
+        display: block;
+        width: 23%;
+        margin: auto;
+
+    }
+    
+</style>
+
+<body>
+    <header>
+        <!-- left class for logo -->
+        <div class="left">
+            <img src="icons8-fitness-64.png" alt="Noor Fitness Centre">
+        </div>
+        <!-- mid class for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Campus</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right class for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Chat With Us</button>
+        </div>
+        <div class="container">
+            <h1>Join the Best Gym in Kotkapura</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Name here">
+                    <input type="text" placeholder="Enter your Age here">
+                    <input type="text" placeholder="Enter your Gender here">
+                    <input type="text" placeholder="Enter your Mobile No. here">
+                </div>
+                <div class="form-group"></div>
+                <div class="form-group"></div>
+                <div class="form-group"></div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
